@@ -1,0 +1,92 @@
+body {
+    background-color: #ededed;
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url('/home.png');
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+}
+
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.offcanvas-body ul li a:hover{
+    color: #04428a;
+}
+
+.sidenav a:hover{
+    color: #04428a;
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, .35);
+    backdrop-filter: blur(10px);
+    border: none;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background: #04428a;
+    color: #ededed;
+}
+
+
+
+/* Hero Section */
+
+.hero-container{
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    padding-left: 30px;
+}
+
+.hero-container h2{
+    background: #04428a;
+    padding: 10px;
+}
+
+.hero-text{
+    margin-left: 20px;
+    color: #ededed;
+    font-weight: bold;
+}
+
+.hero-line{
+    width: 10px;
+    height: 200px;
+    background: #90b023;
+}
+
+.h-text{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+@media (max-width : 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, .35);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (max-width : 578px){
+    .sidenav{
+        flex-direction: row;
+        margin-left:auto;
+    }
+    .hero-container{
+        bottom: 30%;
+    }
+    
+    .hero-container h2{
+        padding: 10px;
+    }
+}
